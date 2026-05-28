@@ -46,7 +46,7 @@ A three-tier AI infrastructure: free plugin for distribution, paid API for reven
 
 | Chain | Project | Details |
 |-------|---------|---------|
-| **Ethereum** | **[The Undesirables NFT](https://github.com/sailorpepe/contracts)** | 4,444 ERC-721 collection on [Scatter.art](https://www.scatter.art/collection/the-undesirables) — 273 minted |
+| **Ethereum** | **[The Undesirables NFT](https://www.scatter.art/collection/the-undesirables)** | 4,444 ERC-721 collection on Scatter.art — 273 minted |
 | **LitVM LiteForge** | **[TCG Price Oracle](https://github.com/sailorpepe/litvm-tcg-oracle)** | On-chain price feeds — 50 products, 260+ updates, hourly refresh |
 | **LitVM LiteForge** | **[GradingEscrow](https://liteforge.explorer.caldera.xyz/address/0xe784d2AE4171De8f909eb638a60BE03B2341bB82)** | AI grading payments (0.001 zkLTC) |
 | **LitVM LiteForge** | **[TCGOracleToken](https://liteforge.explorer.caldera.xyz/address/0x8D0AF701d318Be518F9ca6934B8F76Be24029AD4)** | TCGO governance token (1M supply) |
