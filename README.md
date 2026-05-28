@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="header.png" alt="header" width="100%" />
+<img src="banner.png" alt="header" width="100%" />
 
 # Hey, I'm SailorPepe 👋
 
