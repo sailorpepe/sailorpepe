@@ -45,6 +45,7 @@ Building the world's only on-chain TCG price oracle — AI card grading, Monte C
 | ⚡ | **[x402 Oracle API](https://github.com/sailorpepe/undesirables-x402-server)** | 26 paid endpoints · Merton Jump-Diffusion Monte Carlo · AI card grading · USDC on Base |
 | 🛠️ | **[MCP Server](https://github.com/sailorpepe/undesirables-mcp-server)** | 35+ local compute tools · zero telemetry · zero cloud · PyPI v1.1.7 |
 | 🔗 | **[LitVM MCP](https://github.com/sailorpepe/litvm-tcg-oracle-mcp)** | 6-tool MCP for on-chain prices · Merkle-verified · PyPI v1.0.3 |
+| 🔮 | **[WebMCP](https://github.com/sailorpepe/tcg-oracle-webmcp)** | Browser-native AI agent tools · 7 tools via navigator.modelContext · zero API keys |
 | 🎴 | **[TCG Plugin](https://github.com/sailorpepe/plugin-tcg-oracle)** | Standalone ElizaOS plugin for TCG market intelligence |
 
 ---
