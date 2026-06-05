@@ -33,18 +33,19 @@ Building the world's only on-chain TCG price oracle — AI card grading, Monte C
 
 ### 🤖 AI Agent Ecosystem
 
-A three-tier AI infrastructure: free plugin for distribution, paid API for revenue, local MCP for compute.
+<div align="center">
 
-| Tier | Project | Distribution | Stack |
-|------|---------|-------------|-------|
-| **Plugin** | **[ElizaOS Plugin](https://github.com/sailorpepe/plugin-undesirables)** — Personality-as-Code, 16 live-data skills | npm v2.5.0 | TypeScript |
-| **Oracle API** | **[x402 Server](https://github.com/sailorpepe/undesirables-x402-server)** — Merton Jump-Diffusion Monte Carlo, AI card grading, micropayments on Base | x402 USDC | Python |
-| **MCP Server** | **[MCP Server](https://github.com/sailorpepe/undesirables-mcp-server)** — 35+ local compute tools, zero telemetry | PyPI v1.1.7 | Python |
+**Plugin** · **Oracle API** · **MCP Server** — a three-tier AI stack for distribution, revenue, and local compute.
 
-| Supporting | Description |
-|------------|-------------|
-| **[LitVM TCG Oracle MCP](https://github.com/sailorpepe/litvm-tcg-oracle-mcp)** | 6-tool MCP server for LitVM on-chain prices, Merkle-verified |
-| **[ElizaOS TCG Plugin](https://github.com/sailorpepe/plugin-tcg-oracle)** | Standalone ElizaOS plugin for TCG market intelligence |
+</div>
+
+| | Project | What It Does |
+|:---:|---------|-------------|
+| 🔌 | **[ElizaOS Plugin](https://github.com/sailorpepe/plugin-undesirables)** | Personality-as-Code for ElizaOS agents · 16 live-data skills · npm v2.5.0 |
+| ⚡ | **[x402 Oracle API](https://github.com/sailorpepe/undesirables-x402-server)** | 26 paid endpoints · Merton Jump-Diffusion Monte Carlo · AI card grading · USDC on Base |
+| 🛠️ | **[MCP Server](https://github.com/sailorpepe/undesirables-mcp-server)** | 35+ local compute tools · zero telemetry · zero cloud · PyPI v1.1.7 |
+| 🔗 | **[LitVM MCP](https://github.com/sailorpepe/litvm-tcg-oracle-mcp)** | 6-tool MCP for on-chain prices · Merkle-verified · PyPI v1.0.3 |
+| 🎴 | **[TCG Plugin](https://github.com/sailorpepe/plugin-tcg-oracle)** | Standalone ElizaOS plugin for TCG market intelligence |
 
 ---
 
