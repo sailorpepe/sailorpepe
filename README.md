@@ -21,6 +21,8 @@ Building the world's only on-chain TCG price oracle — AI card grading, Monte C
 
 > The world's only on-chain TCG price oracle. No competitor exists — not Chainlink, not Pyth, not UMA.
 
+<div align="center">
+
 | Contract | Purpose | Address |
 |----------|---------|---------|
 | **[TCG Price Oracle V2](https://github.com/sailorpepe/litvm-tcg-oracle)** | 50 blue-chip TWAP feeds, hourly updates | `0x04a1...3072` |
@@ -29,11 +31,15 @@ Building the world's only on-chain TCG price oracle — AI card grading, Monte C
 | **[Grading Escrow](https://liteforge.explorer.caldera.xyz/address/0xe784d2AE4171De8f909eb638a60BE03B2341bB82)** | Pay-to-grade, AI card analysis | `0xe784...bB82` |
 | **[TCGO Token](https://liteforge.explorer.caldera.xyz/address/0x8D0AF701d318Be518F9ca6934B8F76Be24029AD4)** | Governance token (1M supply) | `0x8D0A...e4A4` |
 
+</div>
+
 
 
 ---
 
 <h3 align="center">🤖 AI Agent Ecosystem</h3>
+
+<div align="center">
 
 | Tier | Project | Distribution |
 |------|---------|-------------|
@@ -43,18 +49,26 @@ Building the world's only on-chain TCG price oracle — AI card grading, Monte C
 | **Plugin** | **[ElizaOS Plugin](https://github.com/sailorpepe/plugin-undesirables)** — Personality-as-Code, 16 live-data skills | npm v2.5.0 |
 | **TCG Plugin** | **[TCG Oracle Plugin](https://github.com/sailorpepe/plugin-tcg-oracle)** — Standalone ElizaOS TCG intelligence | npm |
 
+</div>
+
 ---
 
 <h3 align="center">🖥️ Desktop & Mobile Apps</h3>
+
+<div align="center">
 
 | App | Description | Stack |
 |-----|-------------|-------|
 | **[Undesirables Desktop](https://github.com/sailorpepe/undesirables-desktop)** | Full desktop agent — TCG analytics, NFT generation, AI grading, UNDSR slab renderer | Tauri v2, Rust, React |
 | **[TCG Oracle App](https://github.com/sailorpepe/tcg-oracle-app)** | Cross-platform market intelligence — price analytics, AI grading, Soul system | React Native, Expo, Tauri |
 
+</div>
+
 ---
 
 <h3 align="center">📊 By the Numbers</h3>
+
+<div align="center">
 
 ```
 432K+    Products indexed across 13 TCG categories
@@ -67,6 +81,8 @@ Building the world's only on-chain TCG price oracle — AI card grading, Monte C
 4,444    NFTs generated (ERC-721)
 94       Solidity test cases passing
 ```
+
+</div>
 
 ---
 
