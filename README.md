@@ -78,12 +78,8 @@ Building the world's only on-chain TCG price oracle — AI card grading, Monte C
 
 <div align="center">
 
-<a href="https://github.com/sailorpepe">
-  <img height="180" src="https://github-readme-stats.vercel.app/api?username=sailorpepe&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub Stats" />
-</a>
-<a href="https://github.com/sailorpepe">
-  <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=sailorpepe&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Top Languages" />
-</a>
+[![GitHub Stats](https://github-readme-stats.vercel.app/api?username=sailorpepe&show_icons=true&theme=tokyonight&hide_border=true&count_private=true)](https://github.com/sailorpepe)
+[![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=sailorpepe&layout=compact&theme=tokyonight&hide_border=true&langs_count=8)](https://github.com/sailorpepe)
 
 </div>
 
