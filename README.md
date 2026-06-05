@@ -17,7 +17,7 @@ Building the world's only on-chain TCG price oracle — AI card grading, Monte C
 
 ---
 
-### ⛓️ On-Chain Oracle (LitVM LiteForge — Chain 4441)
+<h3 align="center">⛓️ On-Chain Oracle (LitVM LiteForge — Chain 4441)</h3>
 
 > The world's only on-chain TCG price oracle. No competitor exists — not Chainlink, not Pyth, not UMA.
 
@@ -29,11 +29,11 @@ Building the world's only on-chain TCG price oracle — AI card grading, Monte C
 | **[Grading Escrow](https://liteforge.explorer.caldera.xyz/address/0xe784d2AE4171De8f909eb638a60BE03B2341bB82)** | Pay-to-grade, AI card analysis | `0xe784...bB82` |
 | **[TCGO Token](https://liteforge.explorer.caldera.xyz/address/0x8D0AF701d318Be518F9ca6934B8F76Be24029AD4)** | Governance token (1M supply) | `0x8D0A...e4A4` |
 
-**Security Audit:** 12 findings identified, all patched — hardened V2 redeployed June 4, 2026.
+
 
 ---
 
-### 🤖 AI Agent Ecosystem
+<h3 align="center">🤖 AI Agent Ecosystem</h3>
 
 | Tier | Project | Distribution |
 |------|---------|-------------|
@@ -45,7 +45,7 @@ Building the world's only on-chain TCG price oracle — AI card grading, Monte C
 
 ---
 
-### 🖥️ Desktop & Mobile Apps
+<h3 align="center">🖥️ Desktop & Mobile Apps</h3>
 
 | App | Description | Stack |
 |-----|-------------|-------|
@@ -54,7 +54,7 @@ Building the world's only on-chain TCG price oracle — AI card grading, Monte C
 
 ---
 
-### 📊 By the Numbers
+<h3 align="center">📊 By the Numbers</h3>
 
 ```
 432K+    Products indexed across 13 TCG categories
@@ -70,7 +70,7 @@ Building the world's only on-chain TCG price oracle — AI card grading, Monte C
 
 ---
 
-### 🛠️ Tech Stack
+<h3 align="center">🛠️ Tech Stack</h3>
 
 <div align="center">
 
