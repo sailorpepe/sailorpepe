@@ -8,7 +8,7 @@
 
 Building the world's only on-chain TCG price oracle — AI card grading, Monte Carlo simulations, and 432K+ trading card products on LitVM LiteForge.
 
-[![Website](https://img.shields.io/badge/Website-the--undesirables.com-00dcff?style=for-the-badge&logo=vercel&logoColor=white)](https://www.the-undesirables.com)
+[![Live Dashboard](https://img.shields.io/badge/Live_Dashboard-the--undesirables.com%2Flitvm-00dcff?style=for-the-badge&logo=vercel&logoColor=white)](https://the-undesirables.com/litvm)
 [![X](https://img.shields.io/badge/X-@undesirables__ai-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/undesirables_ai)
 [![npm](https://img.shields.io/badge/npm-plugin--undesirables-CB3837?style=for-the-badge&logo=npm&logoColor=white)](https://www.npmjs.com/package/plugin-undesirables)
 [![PyPI](https://img.shields.io/badge/PyPI-undesirables--mcp--server-3775A9?style=for-the-badge&logo=pypi&logoColor=white)](https://pypi.org/project/undesirables-mcp-server/)
