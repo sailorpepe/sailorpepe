@@ -31,6 +31,16 @@ Building the world's only on-chain TCG price oracle — AI card grading, Monte C
 
 ---
 
+### ⛓️ Sovereign Oracle Infrastructure (Mantle Testnet — Chain 5003)
+
+| Contract | Purpose | Address |
+|----------|---------|---------|
+| **[TCG Price Oracle V2](https://github.com/sailorpepe/mantle-oracle-infrastructure)** | Hourly TWAP for top 50 blue-chip RWA cards | `0xA679...44cD` |
+| **[Merkle Price Oracle](https://github.com/sailorpepe/mantle-oracle-infrastructure)** | Daily Merkle root for 276,000+ products | `0x6B31...072c` |
+| **[Weather Edge Oracle](https://github.com/sailorpepe/mantle-oracle-infrastructure)** | Hourly NWS Parametric data verification | `0xe0dC...3451` |
+
+---
+
 ### 🤖 AI Agent Ecosystem
 
 <div align="center">
@@ -46,6 +56,7 @@ Building the world's only on-chain TCG price oracle — AI card grading, Monte C
 | 🛠️ | **[MCP Server](https://github.com/sailorpepe/undesirables-mcp-server)** | 35+ local compute tools · zero telemetry · zero cloud · PyPI v1.1.7 |
 | 🔗 | **[LitVM MCP](https://github.com/sailorpepe/litvm-tcg-oracle-mcp)** | 6-tool MCP for on-chain prices · Merkle-verified · PyPI v1.0.3 |
 | 🔮 | **[WebMCP](https://github.com/sailorpepe/tcg-oracle-webmcp)** | Browser-native AI agent tools · 7 tools via navigator.modelContext · zero API keys |
+| 📊 | **[Widget](https://github.com/sailorpepe/tcg-oracle-widget)** | Embeddable price cards · 4 skins · sparklines · graded premiums · one `<script>` tag |
 | 🎴 | **[TCG Plugin](https://github.com/sailorpepe/plugin-tcg-oracle)** | Standalone ElizaOS plugin for TCG market intelligence |
 
 ---
@@ -92,6 +103,7 @@ Building the world's only on-chain TCG price oracle — AI card grading, Monte C
 
 ![Ethereum](https://img.shields.io/badge/Ethereum-3C3C3D?style=flat-square&logo=ethereum&logoColor=white)
 ![Litecoin](https://img.shields.io/badge/Litecoin-A6A9AA?style=flat-square&logo=litecoin&logoColor=white)
+![Mantle](https://img.shields.io/badge/Mantle-000000?style=flat-square&logo=mantle&logoColor=white)
 ![Base](https://img.shields.io/badge/Base-0052FF?style=flat-square&logo=coinbase&logoColor=white)
 ![Ollama](https://img.shields.io/badge/Ollama-000000?style=flat-square&logo=ollama&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
