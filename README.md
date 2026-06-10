@@ -23,7 +23,7 @@ Building the world's only on-chain TCG price oracle — AI card grading, Monte C
 
 | Contract | Purpose | Address |
 |----------|---------|---------|
-| **[TCG Price Oracle V2](https://github.com/sailorpepe/litvm-tcg-oracle)** | 50 blue-chip TWAP feeds, hourly updates | `0x04a1...3072` |
+| **[TCG Price Oracle V2](https://github.com/sailorpepe/litvm-tcg-oracle)** | 50 blue-chip TWAP feeds, hourly updates | `0x697b...720E` |
 | **[Merkle Price Oracle](https://github.com/sailorpepe/litvm-tcg-oracle)** | 276K products, trustless verification | `0x96B1...70Cd` |
 | **[Graded Price Oracle](https://github.com/sailorpepe/litvm-tcg-oracle)** | PSA/BGS graded card prices | `0xc159...636B` |
 | **[Grading Escrow](https://liteforge.explorer.caldera.xyz/address/0xe784d2AE4171De8f909eb638a60BE03B2341bB82)** | Pay-to-grade, AI card analysis | `0xe784...bB82` |
@@ -35,7 +35,7 @@ Building the world's only on-chain TCG price oracle — AI card grading, Monte C
 
 | Contract | Purpose | Address |
 |----------|---------|---------|
-| **[TCG Price Oracle V2](https://github.com/sailorpepe/mantle-oracle-infrastructure)** | Hourly TWAP for top 50 blue-chip RWA cards | `0xA679...44cD` |
+| **[TCG Price Oracle V2](https://github.com/sailorpepe/mantle-oracle-infrastructure)** | Hourly TWAP for top 50 blue-chip RWA cards | `0x1A48...63B4` |
 | **[Merkle Price Oracle](https://github.com/sailorpepe/mantle-oracle-infrastructure)** | Daily Merkle root for 276,000+ products | `0x6B31...072c` |
 | **[Weather Edge Oracle](https://github.com/sailorpepe/mantle-oracle-infrastructure)** | Hourly NWS Parametric data verification | `0xe0dC...3451` |
 
