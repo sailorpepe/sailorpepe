@@ -45,7 +45,7 @@ Building the world's only on-chain TCG price oracle — AI card grading, Monte C
 
 | Contract / Tool | Purpose | Stack |
 |----------|---------|---------|
-| **[Merkle Price Oracle](https://testnet.cspr.live/contract/5e160e1d845e2c438343ab6a084620b7bc603099cd3ba3f938c4b1b88e17b8f9)** | Trustless TCG price verification ported to WebAssembly | Odra / Rust |
+| **[Merkle Price Oracle](https://testnet.cspr.live/contract/0235f90c8dac5ecb30011672fc60ce1e98d51c5adfb5c019f44622bfb344bd77)** | Trustless TCG price verification ported to WebAssembly | Odra / Rust |
 | **[Casper x402 Middleware](https://github.com/sailorpepe/undesirables-x402-server)** | Bridges Coinbase CDP to CSPR.cloud for AI micropayments | Python / FastAPI |
 
 ---
