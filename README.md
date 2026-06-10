@@ -45,8 +45,8 @@ Building the world's only on-chain TCG price oracle — AI card grading, Monte C
 
 | Contract / Tool | Purpose | Stack |
 |----------|---------|---------|
-| **Merkle Price Oracle** | Trustless TCG price verification ported to WebAssembly | Odra / Rust |
-| **Casper x402 Middleware** | Bridges Coinbase CDP to CSPR.cloud for AI micropayments | Python / FastAPI |
+| **[Merkle Price Oracle](https://github.com/sailorpepe/casper-tcg-oracle)** | Trustless TCG price verification ported to WebAssembly | Odra / Rust |
+| **[Casper x402 Middleware](https://github.com/sailorpepe/undesirables-x402-server)** | Bridges Coinbase CDP to CSPR.cloud for AI micropayments | Python / FastAPI |
 
 ---
 
