@@ -43,8 +43,6 @@ Building the world's only on-chain TCG price oracle — AI card grading, Monte C
 
 ### ⛓️ Agentic Buildathon Infrastructure (Casper Testnet)
 
-> Phase 1 & 2 Completed: Rust/Odra WASM contracts deployed and integrated with local AI infrastructure.
-
 | Contract / Tool | Purpose | Stack |
 |----------|---------|---------|
 | **Merkle Price Oracle** | Trustless TCG price verification ported to WebAssembly | Odra / Rust |
