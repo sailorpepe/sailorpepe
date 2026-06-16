@@ -12,6 +12,7 @@ Building the world's only on-chain TCG price oracle — AI card grading, Monte C
 [![X](https://img.shields.io/badge/X-@undesirables__ai-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/undesirables_ai)
 [![npm](https://img.shields.io/badge/npm-plugin--undesirables-CB3837?style=for-the-badge&logo=npm&logoColor=white)](https://www.npmjs.com/package/plugin-undesirables)
 [![PyPI](https://img.shields.io/badge/PyPI-undesirables--mcp--server-3775A9?style=for-the-badge&logo=pypi&logoColor=white)](https://pypi.org/project/undesirables-mcp-server/)
+[![Play The Syndicate](https://img.shields.io/badge/▶_Play-The_Syndicate-ff2d78?style=for-the-badge&logoColor=white)](https://play.the-undesirables.com)
 
 </div>
 
@@ -76,6 +77,16 @@ Building the world's only on-chain TCG price oracle — AI card grading, Monte C
 |-----|-------------|-------|
 | **[Undesirables Desktop](https://github.com/sailorpepe/undesirables-desktop)** | Full desktop app — TCG analytics, NFT generation, AI card grading, UNDSR slab renderer | Tauri v2, Rust, React |
 | **[TCG Oracle App](https://github.com/sailorpepe/tcg-oracle-app)** | Cross-platform TCG market intelligence — price analytics, AI grading, Vault portfolio tracking | React Native, Expo |
+
+---
+
+### 🎮 Built on the Oracle
+
+| Project | Description | Stack |
+|---------|-------------|-------|
+| 🕹️ **[The Syndicate](https://play.the-undesirables.com)** | A turn-based organized-crime game whose entire loot economy runs on the on-chain TCG oracle — every card you loot carries its **real** market price, price history, and an on-chain Merkle proof you can verify. Free, no wallet, plays in the browser. | React, TypeScript, Vite, Vercel |
+
+> Proof the oracle is more than a data feed — the same on-chain prices now power a living game economy. **▶ [play.the-undesirables.com](https://play.the-undesirables.com)**
 
 ---
 
