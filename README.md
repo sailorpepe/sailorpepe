@@ -6,7 +6,7 @@
 
 **Founder @ THE UNDESIRABLES LLC**
 
-Building the world's only on-chain TCG price oracle — AI card grading, Monte Carlo simulations, and 432K+ trading card products on LitVM LiteForge.
+Building the world's only on-chain TCG price oracle — AI card grading, honest calibrated risk forecasts, and 432K+ trading card products on LitVM LiteForge.
 
 [![Live Dashboard](https://img.shields.io/badge/Live_Dashboard-the--undesirables.com%2Flitvm-00dcff?style=for-the-badge&logo=vercel&logoColor=white)](https://the-undesirables.com/litvm)
 [![X](https://img.shields.io/badge/X-@undesirables__ai-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/undesirables_ai)
@@ -51,6 +51,19 @@ Building the world's only on-chain TCG price oracle — AI card grading, Monte C
 
 ---
 
+### 📈 Risk Intelligence — what makes the oracle different
+
+> Not just a price — an **honest forecast**. Distribution-free **conformal calibration** means "5% downside risk" actually happens ~5% of the time, validated out-of-sample. Deterministic and reproducible — anyone can re-run it and get the same number.
+
+| Feature | What It Does |
+|---------|-------------|
+| **Calibrated risk forecast** | Regime-aware bands + honest VaR — the default model. Monte Carlo (GBM / Merton jump-diffusion) stays opt-in, drand-seeded & provably fair |
+| **Card Rating** | Two letter grades per card — **Safe-Hold** (downside protection) + **Momentum** (direction) |
+| **Shareable risk pages** | `oracle.the-undesirables.com/card/<id>` — card art + forecast + grades, unfurls on social |
+| **Forward-only track record** | Every forecast locked nightly and scored against reality — a public, self-grading accuracy ledger |
+
+---
+
 ### 🤖 AI Agent Ecosystem
 
 <div align="center">
@@ -62,7 +75,7 @@ Building the world's only on-chain TCG price oracle — AI card grading, Monte C
 | | Project | What It Does |
 |:---:|---------|-------------|
 | 🔌 | **[ElizaOS Plugin](https://github.com/sailorpepe/plugin-undesirables)** | Personality-as-Code for ElizaOS agents · 16 live-data skills · npm v2.5.0 |
-| ⚡ | **[x402 Oracle API](https://github.com/sailorpepe/undesirables-x402-server)** | 26 paid endpoints · Merton Jump-Diffusion Monte Carlo · AI card grading · USDC on Base |
+| ⚡ | **[x402 Oracle API](https://github.com/sailorpepe/undesirables-x402-server)** | 26 endpoints (14 paid) · honest calibrated risk forecasts + card grades · AI card grading · USDC on Base |
 | 🛠️ | **[MCP Server](https://github.com/sailorpepe/undesirables-mcp-server)** | 35+ local compute tools · zero telemetry · zero cloud · PyPI v1.1.7 |
 | 🔗 | **[LitVM MCP](https://github.com/sailorpepe/litvm-tcg-oracle-mcp)** | 6-tool MCP for on-chain prices · Merkle-verified · PyPI v1.0.3 |
 | 🔮 | **[WebMCP](https://github.com/sailorpepe/tcg-oracle-webmcp)** | Browser-native AI agent tools · 7 tools via navigator.modelContext · zero API keys |
