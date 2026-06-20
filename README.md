@@ -76,7 +76,7 @@ Building the world's only on-chain TCG price oracle — AI card grading, honest 
 |:---:|---------|-------------|
 | 🔌 | **[ElizaOS Plugin](https://github.com/sailorpepe/plugin-undesirables)** | Personality-as-Code for ElizaOS agents · 16 live-data skills · npm v2.5.0 |
 | ⚡ | **[x402 Oracle API](https://github.com/sailorpepe/undesirables-x402-server)** | 26 endpoints (14 paid) · honest calibrated risk forecasts + card grades · AI card grading · USDC on Base |
-| 🛠️ | **[MCP Server](https://github.com/sailorpepe/undesirables-mcp-server)** | 35+ local compute tools · zero telemetry · zero cloud · PyPI v1.1.7 |
+| 🛠️ | **[MCP Server](https://github.com/sailorpepe/undesirables-mcp-server)** | 35+ local compute tools · free `card_forecast` · zero telemetry · PyPI v1.1.8 |
 | 🔗 | **[LitVM MCP](https://github.com/sailorpepe/litvm-tcg-oracle-mcp)** | 6-tool MCP for on-chain prices · Merkle-verified · PyPI v1.0.3 |
 | 🔮 | **[WebMCP](https://github.com/sailorpepe/tcg-oracle-webmcp)** | Browser-native AI agent tools · 7 tools via navigator.modelContext · zero API keys |
 | 📊 | **[Widget](https://github.com/sailorpepe/tcg-oracle-widget)** | Embeddable price cards · 4 skins · sparklines · graded premiums · one `<script>` tag |
