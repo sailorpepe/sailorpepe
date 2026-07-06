@@ -121,7 +121,7 @@ Building the world's only on-chain TCG price oracle — AI card grading, honest 
 442K+    Products indexed across 25 TCG games
 23M+     Price history data points
 276K     Products Merkle-verified on-chain
-819      Soul predictions Merkle-locked before outcomes exist
+1,638+   Soul predictions Merkle-locked before outcomes exist (2 live cohorts, +819/week)
 273      Souls competing on the public leaderboard
 50       Blue-chip cards with hourly TWAP feeds
 27       API endpoints (13 free, 14 paid)
