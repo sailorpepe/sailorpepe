@@ -6,7 +6,7 @@
 
 **Founder @ THE UNDESIRABLES LLC**
 
-Building the world's only on-chain TCG price oracle — AI card grading, honest calibrated risk forecasts, and 442K+ trading card products on LitVM LiteForge — plus 4,444 on-chain AI souls with Merkle-locked prediction track records.
+Building the world's only on-chain TCG price oracle — AI card grading, honest calibrated risk forecasts, and 446K+ trading card products on LitVM LiteForge — plus 4,444 on-chain AI souls with Merkle-locked prediction track records.
 
 [![Live Dashboard](https://img.shields.io/badge/Live_Dashboard-the--undesirables.com%2Flitvm-00dcff?style=for-the-badge&logo=vercel&logoColor=white)](https://the-undesirables.com/litvm)
 [![X](https://img.shields.io/badge/X-@undesirables__ai-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/undesirables_ai)
@@ -25,7 +25,7 @@ Building the world's only on-chain TCG price oracle — AI card grading, honest 
 | Contract | Purpose | Address |
 |----------|---------|---------|
 | **[TCG Price Oracle V2](https://liteforge.explorer.caldera.xyz/address/0x697bF6AE96fb05a47106abd012C39855A16a720E)** | 50 blue-chip TWAP feeds, hourly updates | `0x697b...720E` |
-| **[Merkle Price Oracle](https://liteforge.explorer.caldera.xyz/address/0x96B124f50156589274ADF8F674509374752170Cd)** | 276K products, trustless verification | `0x96B1...70Cd` |
+| **[Merkle Price Oracle](https://liteforge.explorer.caldera.xyz/address/0x96B124f50156589274ADF8F674509374752170Cd)** | 284K products, trustless verification | `0x96B1...70Cd` |
 | **[Graded Price Oracle](https://liteforge.explorer.caldera.xyz/address/0xc159550e9e751d6E75A0A06Bb04cfA2f59aD636B)** | PSA/BGS graded card prices | `0xc159...636B` |
 | **[Grading Escrow](https://liteforge.explorer.caldera.xyz/address/0xe784d2AE4171De8f909eb638a60BE03B2341bB82)** | Pay-to-grade, AI card analysis | `0xe784...bB82` |
 | **[TCGO Token](https://liteforge.explorer.caldera.xyz/address/0x8D0AF701d318Be518F9ca6934B8F76Be24029AD4)** | Governance token (1M supply) | `0x8D0A...9AD4` |
@@ -39,7 +39,7 @@ Building the world's only on-chain TCG price oracle — AI card grading, honest 
 | Contract | Purpose | Address |
 |----------|---------|---------|
 | **[TCG Price Oracle V2](https://explorer.sepolia.mantle.xyz/address/0x1A48672001df4F11346D039BD9d67009B37F63B4)** | Hourly TWAP for top 50 blue-chip RWA cards | `0x1A48...63B4` |
-| **[Merkle Price Oracle](https://explorer.sepolia.mantle.xyz/address/0x6B31b3735D88b148d47255EdAa4DD74A65D8072c)** | Daily Merkle root for 276,000+ products | `0x6B31...072c` |
+| **[Merkle Price Oracle](https://explorer.sepolia.mantle.xyz/address/0x6B31b3735D88b148d47255EdAa4DD74A65D8072c)** | Hourly Merkle root for 284,000+ products | `0x6B31...072c` |
 | **[Weather Edge Oracle](https://explorer.sepolia.mantle.xyz/address/0xe0dCD77D245480CEB830EA66B74849101F853451)** | Hourly NWS Parametric data verification | `0xe0dC...3451` |
 
 ---
@@ -70,7 +70,7 @@ Building the world's only on-chain TCG price oracle — AI card grading, honest 
 
 > Each Undesirable NFT's on-chain traits deterministically define a complete agent personality — Big Five scores, archetype, strategy, memory. Every minted soul locks 3 market predictions weekly, **Merkle-committed on-chain before outcomes exist**, then graded by the conformal oracle. Credit scores, but for artificial personalities.
 
-- 🏆 **Live leaderboard:** [the-undesirables.com/souls](https://the-undesirables.com/souls) — 273 souls competing, 819 predictions locked, first settlement July 31
+- 🏆 **Live leaderboard:** [the-undesirables.com/souls](https://the-undesirables.com/souls) — 273 souls competing, 2,457 predictions locked across 3 weekly cohorts, first settlement July 31
 - 🐸 **Live reference agent:** Soul #1 "Glitch" runs autonomously on [Moltbook](https://www.moltbook.com/u/glitch_undsr) — personality loaded verbatim from its soul workspace
 - 🔌 **Load a soul into your agent:** `npm i plugin-undesirables` (ElizaOS) or grab the workspace at [the-undesirables.com/soul](https://the-undesirables.com/soul)
 
@@ -87,10 +87,10 @@ Building the world's only on-chain TCG price oracle — AI card grading, honest 
 | | Project | What It Does |
 |:---:|---------|-------------|
 | 🔌 | **[ElizaOS Plugin](https://github.com/sailorpepe/plugin-undesirables)** | Personality-as-Code for ElizaOS agents · 24 skills · npm v2.5.0 |
-| ⚡ | **[x402 Oracle API](https://github.com/sailorpepe/undesirables-x402-server)** | 27 endpoints (14 paid) · conformal risk forecasts + card grades · AI card grading · USDC on Base · x402 Bazaar-listed (12 resources) |
+| ⚡ | **[x402 Oracle API](https://github.com/sailorpepe/undesirables-x402-server)** | 31 endpoints (14 paid) · conformal risk forecasts + card grades · AI card grading · UNDSR mint-tx builder · USDC on Base · x402 Bazaar-listed (13 resources) |
 | 🛠️ | **[MCP Server](https://github.com/sailorpepe/undesirables-mcp-server)** | 35+ local compute tools · free `card_forecast` · zero telemetry · PyPI v1.1.9 |
 | 🔗 | **[LitVM MCP](https://github.com/sailorpepe/litvm-tcg-oracle-mcp)** | 7-tool MCP for on-chain prices · Merkle-verified · PyPI v1.0.6 |
-| 🔮 | **[WebMCP](https://github.com/sailorpepe/tcg-oracle-webmcp)** | Browser-native AI agent tools · 7 tools via navigator.modelContext · zero API keys |
+| 🔮 | **[WebMCP](https://github.com/sailorpepe/tcg-oracle-webmcp)** | Browser-native AI agent tools · 9 tools via navigator.modelContext · zero API keys |
 | 📊 | **[Widget](https://github.com/sailorpepe/tcg-oracle-widget)** | Embeddable price cards · 4 skins · sparklines · graded premiums · one `<script>` tag |
 | 🎴 | **[TCG Plugin](https://github.com/sailorpepe/elizaos-tcg-oracle-plugin)** | Standalone ElizaOS plugin for TCG market intelligence |
 
@@ -118,13 +118,13 @@ Building the world's only on-chain TCG price oracle — AI card grading, honest 
 ### 📊 By the Numbers
 
 ```
-442K+    Products indexed across 25 TCG games
-23M+     Price history data points
-276K     Products Merkle-verified on-chain
-1,638+   Soul predictions Merkle-locked before outcomes exist (2 live cohorts, +819/week)
+446K+    Products indexed across 25 TCG games
+26M+     Price history data points
+284K     Products Merkle-verified on-chain (hourly roots on LitVM, Mantle & Casper)
+2,457+   Soul predictions Merkle-locked before outcomes exist (3 live cohorts, +819/week)
 273      Souls competing on the public leaderboard
 50       Blue-chip cards with hourly TWAP feeds
-27       API endpoints (13 free, 14 paid)
+31       API endpoints (17 free, 14 paid)
 35+      MCP local compute tools
 24       Live-data AI agent skills
 4,444    NFTs generated (ERC-721)
