@@ -46,10 +46,15 @@ Building the world's only on-chain TCG price oracle — AI card grading, honest 
 
 ### ⛓️ Agentic Buildathon Infrastructure (Casper Testnet)
 
+> **[DoraHacks buildathon entry](https://dorahacks.io/buidl/44752)** — hourly 32-byte Merkle roots over 284K+ card prices, so any agent verifies any price against the chain instead of trusting an API.
+
 | Contract / Tool | Purpose | Stack |
 |----------|---------|---------|
-| **[Merkle Price Oracle](https://testnet.cspr.live/contract/0235f90c8dac5ecb30011672fc60ce1e98d51c5adfb5c019f44622bfb344bd77)** | Trustless TCG price verification ported to WebAssembly | Odra / Rust |
-| **[Casper x402 Middleware](https://github.com/sailorpepe/undesirables-x402-server)** | Bridges Coinbase CDP to CSPR.cloud for AI micropayments | Python / FastAPI |
+| **[Merkle Price Oracle](https://testnet.cspr.live/contract/0235f90c8dac5ecb30011672fc60ce1e98d51c5adfb5c019f44622bfb344bd77)** | Lean Wasm contract (`init` / `update_root` / `get_root`) holding the hourly Merkle root over 284K+ prices | Odra / Rust / Wasm |
+| **[casper-tcg-oracle](https://github.com/sailorpepe/casper-tcg-oracle)** | Contract source, reproducible build + tests, and a judge-followable [testing PLAYBOOK](https://github.com/sailorpepe/casper-tcg-oracle/blob/master/PLAYBOOK.md) | Rust / Python |
+| **[CSPR-paid price API](https://oracle.the-undesirables.com/docs)** | `GET /api/v1/casper/price` — pay 1 CSPR natively (deploy-hash verified: amount + recipient + replay-protected), receive the price **plus a Merkle proof** against the on-chain root. Tested end-to-end on testnet. | Python / FastAPI |
+
+> The x402 402-gate settles USDC on Base; **Casper is the trustless verification layer** — with the native-CSPR lane as the buildathon extra.
 
 ---
 
