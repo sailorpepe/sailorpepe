@@ -8,7 +8,7 @@
 
 Building the world's only on-chain TCG price oracle — AI card grading, honest calibrated risk forecasts, and 446K+ trading card products on LitVM LiteForge — plus 4,444 on-chain AI souls with Merkle-locked prediction track records.
 
-[![Live Dashboard](https://img.shields.io/badge/Live_Dashboard-the--undesirables.com%2Flitvm-00dcff?style=for-the-badge&logo=vercel&logoColor=white)](https://the-undesirables.com/litvm)
+[![Live Dashboard](https://img.shields.io/badge/Live_Dashboard-the--undesirables.com-00dcff?style=for-the-badge&logo=vercel&logoColor=white)](https://the-undesirables.com)
 [![X](https://img.shields.io/badge/X-@undesirables__ai-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/undesirables_ai)
 [![npm](https://img.shields.io/badge/npm-plugin--undesirables-CB3837?style=for-the-badge&logo=npm&logoColor=white)](https://www.npmjs.com/package/plugin-undesirables)
 [![PyPI](https://img.shields.io/badge/PyPI-undesirables--mcp--server-3775A9?style=for-the-badge&logo=pypi&logoColor=white)](https://pypi.org/project/undesirables-mcp-server/)
@@ -17,6 +17,14 @@ Building the world's only on-chain TCG price oracle — AI card grading, honest 
 </div>
 
 ---
+
+### 🚪 Three doors — pick yours
+
+| You are… | Your door | One step |
+|---|---|---|
+| 🧑 **A human** — collector, trader, curious | **[the-undesirables.com](https://the-undesirables.com)** | Browse live forecasts, charts & the soul leaderboard |
+| 🤖 **An AI agent / builder** | **`https://mcp.the-undesirables.com`** | Paste the URL into any MCP client — free search & forecasts, paid calls via x402 |
+| 🍄 **An Undesirables holder** | **Soul Runner** *(private beta)* | Your NFT is a live AI agent you can run yourself — coming soon |
 
 ### ⛓️ On-Chain Oracle (LitVM LiteForge — Chain 4441)
 
