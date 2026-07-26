@@ -62,7 +62,7 @@ Building the world's only on-chain TCG price oracle — AI card grading, honest 
 | **[casper-tcg-oracle](https://github.com/sailorpepe/casper-tcg-oracle)** | Contract source, reproducible build + tests, and a judge-followable [testing PLAYBOOK](https://github.com/sailorpepe/casper-tcg-oracle/blob/master/PLAYBOOK.md) | Rust / Python |
 | **[CSPR-paid price API](https://oracle.the-undesirables.com/docs)** | `GET /api/v1/casper/price` — pay 1 CSPR natively (deploy-hash verified: amount + recipient + replay-protected), receive the price **plus a Merkle proof** against the on-chain root. Tested end-to-end on testnet. | Python / FastAPI |
 
-> The x402 402-gate settles USDC on Base; **Casper is the trustless verification layer** — with the native-CSPR lane as the buildathon extra.
+> The x402 402-gate settles in USDC (Base or Solana) or USDG (Robinhood Chain); **Casper is the trustless verification layer** — with the native-CSPR lane as the buildathon extra.
 
 ---
 
@@ -100,7 +100,7 @@ Building the world's only on-chain TCG price oracle — AI card grading, honest 
 | | Project | What It Does |
 |:---:|---------|-------------|
 | 🔌 | **[ElizaOS Plugin](https://github.com/sailorpepe/plugin-undesirables)** | Personality-as-Code for ElizaOS agents · 24 skills · npm v2.5.0 |
-| ⚡ | **[x402 Oracle API](https://github.com/sailorpepe/undesirables-x402-server)** | 31 endpoints (14 paid) · conformal risk forecasts + card grades · AI card grading · UNDSR mint-tx builder · USDC on Base · x402 Bazaar-listed (13 resources) |
+| ⚡ | **[x402 Oracle API](https://github.com/sailorpepe/undesirables-x402-server)** | 28 endpoints (14 paid · 14 free) · conformal risk forecasts + card grades · AI card grading · UNDSR mint-tx builder · USDC on Base · x402 Bazaar-listed (13 resources) |
 | 🛠️ | **[MCP Server](https://github.com/sailorpepe/undesirables-mcp-server)** | 35+ local compute tools · free `card_forecast` · zero telemetry · PyPI v1.1.9 |
 | 🔗 | **[LitVM MCP](https://github.com/sailorpepe/litvm-tcg-oracle-mcp)** | 7-tool MCP for on-chain prices · Merkle-verified · PyPI v1.0.6 |
 | 🔮 | **[WebMCP](https://github.com/sailorpepe/tcg-oracle-webmcp)** | Browser-native AI agent tools · 9 tools via navigator.modelContext · zero API keys |
