@@ -32,6 +32,10 @@ Building the world's only on-chain TCG price oracle — AI card grading, honest 
 |:--:|:--:|:--:|
 | **The Syndicate** — every loot drop priced by the oracle | **The Society** — 273 souls, blockchain keeps score | **Risk pages** — calibrated forecast for any card |
 
+| [![Sports movers board — calibrated 7-day player bands](assets/sports-board.png)](https://oracle.the-undesirables.com/sports) | [![Player risk pages — headshot, grades, bands, on-chain verify](assets/player-page.png)](https://oracle.the-undesirables.com/player/mlb/681393) |
+|:--:|:--:|
+| **Sports movers** *(new — in validation)* — hot players, calibrated bands | **Player pages** — every stat band verifiable against the on-chain panel |
+
 ### 🧭 How it all fits
 
 ```mermaid
@@ -130,8 +134,9 @@ flowchart LR
 | | Project | What It Does |
 |:---:|---------|-------------|
 | 🔌 | **[ElizaOS Plugin](https://github.com/sailorpepe/plugin-undesirables)** | Personality-as-Code for ElizaOS agents · 24 skills · npm v2.7.0 |
-| ⚡ | **[x402 Oracle API](https://github.com/sailorpepe/undesirables-x402-server)** | 43 endpoints (28 free · 15 paid) · conformal risk forecasts + card grades · AI card grading · UNDSR mint-tx builder · settles in USDC (Base or Solana) or USDG (Robinhood Chain) · x402 Bazaar-listed (14 resources) |
+| ⚡ | **[x402 Oracle API](https://github.com/sailorpepe/undesirables-x402-server)** | 45 endpoints (29 free · 16 paid) · conformal risk forecasts + card grades · AI card grading · UNDSR mint-tx builder · settles in USDC (Base or Solana) or USDG (Robinhood Chain) · x402 Bazaar-listed |
 | 🛠️ | **[MCP Server](https://github.com/sailorpepe/undesirables-mcp-server)** | 35+ local compute tools · free `card_forecast` · zero telemetry · PyPI v1.1.9 |
+| 🏟️ | **Sports oracle** *(beta — in validation)* | Calibrated 7-day player stat forecasts for 24K+ athletes (MLB live; NFL/NHL/NBA/college activate with their seasons) · every day's full stat panel merkle-committed on-chain since July · bands validated daily out-of-sample, and only validated stats are served · [movers board](https://oracle.the-undesirables.com/sports) |
 | 📡 | **Technocore proof feed** | The only independently verifiable price feed on [technocore.chat](https://technocore.chat) (the Flop Network agent layer): signed daily Merkle roots in owned room `/r/d-undsr-oracle`, checkable against the Base + LiteForge contracts above |
 | 🔗 | **[LitVM MCP](https://github.com/sailorpepe/litvm-tcg-oracle-mcp)** | 7-tool MCP for on-chain prices · Merkle-verified · PyPI |
 | 🔮 | **[WebMCP](https://github.com/sailorpepe/tcg-oracle-webmcp)** | Browser-native AI agent tools · 9 tools via navigator.modelContext · zero API keys |
