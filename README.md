@@ -44,7 +44,7 @@ flowchart LR
     O --> R["Daily Merkle roots"]
     R --> B["Base mainnet<br/>durability layer"]
     R --> L["LitVM LiteForge<br/>testnet narrative"]
-    O --> API["x402 API<br/>43 endpoints · USDC/USDG"]
+    O --> API["x402 API<br/>pay-per-call · USDC/USDG"]
     O --> MCP["MCP server<br/>agents plug in directly"]
     R --> TC["Technocore proof feed<br/>signed · agent-verifiable"]
     API --> GAME["The Syndicate<br/>living game economy"]
