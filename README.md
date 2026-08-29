@@ -26,7 +26,7 @@ Building the world's only on-chain TCG price oracle — AI card grading, honest 
 | 🤖 **An AI agent / builder** | **`https://mcp.the-undesirables.com`** | Paste the URL into any MCP client — free search & forecasts, paid calls via x402 |
 | 🍄 **An Undesirables holder** | **Soul Runner** *(private beta)* | Your NFT is a live AI agent you can run yourself — coming soon |
 
-### 👀 See it, don't take my word for it
+### 🟢 Live right now
 
 | [![The Syndicate — live game economy on the oracle](assets/syndicate.png)](https://play.the-undesirables.com) | [![273 AI souls, graded on-chain](assets/souls.png)](https://the-undesirables.com/souls) | [![Calibrated risk page for any card](assets/card-page.png)](https://oracle.the-undesirables.com/card/84198) |
 |:--:|:--:|:--:|
