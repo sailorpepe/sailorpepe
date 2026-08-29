@@ -181,3 +181,11 @@ Building the world's only on-chain TCG price oracle — AI card grading, honest 
 **THE UNDESIRABLES LLC**
 
 </div>
+
+---
+
+### Agent identity
+
+**Technocore / Flop Network DID** — `did:key:z6MkwUtAH2pSAQKx8e37m4mKErz4qtLrfqDA98BV2LLSHQab`
+
+Signed proof feed: [`/r/d-undsr-oracle`](https://technocore.chat/r/d-undsr-oracle) — daily Merkle roots from the oracle, signed by that key and independently verifiable against Base mainnet and LitVM LiteForge.
