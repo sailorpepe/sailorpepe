@@ -26,9 +26,34 @@ Building the world's only on-chain TCG price oracle — AI card grading, honest 
 | 🤖 **An AI agent / builder** | **`https://mcp.the-undesirables.com`** | Paste the URL into any MCP client — free search & forecasts, paid calls via x402 |
 | 🍄 **An Undesirables holder** | **Soul Runner** *(private beta)* | Your NFT is a live AI agent you can run yourself — coming soon |
 
-### ⛓️ On-Chain Oracle — Base Mainnet (Chain 8453), the durability layer
+### 👀 See it, don't take my word for it
+
+| [![The Syndicate — live game economy on the oracle](assets/syndicate.png)](https://play.the-undesirables.com) | [![273 AI souls, graded on-chain](assets/souls.png)](https://the-undesirables.com/souls) | [![Calibrated risk page for any card](assets/card-page.png)](https://oracle.the-undesirables.com/card/84198) |
+|:--:|:--:|:--:|
+| **The Syndicate** — every loot drop priced by the oracle | **The Society** — 273 souls, blockchain keeps score | **Risk pages** — calibrated forecast for any card |
+
+### 🧭 How it all fits
+
+```mermaid
+flowchart LR
+    D[("Market data<br/>454K+ products · 25+ games")] --> O["Conformal Oracle<br/>calibrated forecasts + AI grading"]
+    O --> R["Daily Merkle roots"]
+    R --> B["Base mainnet<br/>durability layer"]
+    R --> L["LitVM LiteForge<br/>testnet narrative"]
+    O --> API["x402 API<br/>43 endpoints · USDC/USDG"]
+    O --> MCP["MCP server<br/>agents plug in directly"]
+    R --> TC["Technocore proof feed<br/>signed · agent-verifiable"]
+    API --> GAME["The Syndicate<br/>living game economy"]
+    SOULS["4,444 souls<br/>weekly locked predictions"] --> R
+    R --> GRADE["On-chain grading<br/>write-once results roots"] --> SOULS
+```
+
+### ⛓️ On-Chain — 15 live contracts across Base mainnet + LitVM LiteForge
 
 > The world's only on-chain TCG price oracle. No competitor exists — not Chainlink, not Pyth, not UMA. Every proof tree and track record has a Base mainnet leg, so nothing depends on a testnet surviving.
+
+<details>
+<summary><b>Base Mainnet (Chain 8453) — the durability layer · 6 contracts</b> <i>(click to expand)</i></summary>
 
 | Contract | Purpose | Address |
 |----------|---------|---------|
@@ -39,7 +64,10 @@ Building the world's only on-chain TCG price oracle — AI card grading, honest 
 | **[Prediction Registry](https://basescan.org/address/0xA6796c86E9f9019B6ff2a5044be8D0211aB344cD)** | Every forward-looking claim (TCG forecasts, weather edges, market claims) committed before it can mature | `0xA679...344cD` |
 | **[Sports Stats Registry V2](https://basescan.org/address/0x2eaf3C3eBa409A5f993990A4B99FF23b08D7E419)** | Daily write-once sports stat roots (4 leagues) + the daily TCG price panel | `0x2eaf...7E419` |
 
-### ⛓️ LitVM LiteForge (Chain 4441) — the LitVM narrative
+</details>
+
+<details>
+<summary><b>LitVM LiteForge (Chain 4441) — the LitVM narrative · 8 contracts</b> <i>(click to expand)</i></summary>
 
 | Contract | Purpose | Address |
 |----------|---------|---------|
@@ -54,12 +82,17 @@ Building the world's only on-chain TCG price oracle — AI card grading, honest 
 
 > Earlier contract generations (pre-audit 2026-07) keep their on-chain history and are documented in the repo — current addresses above are what `/api/v1/merkle/proof` and `/api/v1/graded/proof` verify against.
 
+</details>
+
 ---
 
-### ⛓️ Archived chains (2026-07 wind-down — history kept, do not build on these)
+<details>
+<summary><b>⛓️ Archived chains</b> (2026-07 wind-down — history kept, do not build on these)</summary>
 
 **Mantle Sepolia 5003:** TCG Price Oracle V2 `0x1A48...63B4` · Merkle Price Oracle `0x6B31...072c` · Weather Edge Oracle `0xe0dC...3451`
 **Casper Testnet:** [Merkle Price Oracle (Odra/Wasm)](https://testnet.cspr.live/contract/0235f90c8dac5ecb30011672fc60ce1e98d51c5adfb5c019f44622bfb344bd77) — [DoraHacks buildathon entry](https://dorahacks.io/buidl/44752) with reproducible build + [testing PLAYBOOK](https://github.com/sailorpepe/casper-tcg-oracle/blob/master/PLAYBOOK.md)
+
+</details>
 
 ---
 
@@ -128,8 +161,9 @@ Building the world's only on-chain TCG price oracle — AI card grading, honest 
 
 ### 📊 By the Numbers
 
+<!-- numbers:start -->
 ```
-454K+    Products indexed across 25+ TCG games
+455K+    Products indexed across 25+ TCG games
 30M+     Price history data points
 289K+    Products in the daily Merkle proof tree (roots on Base + LiteForge)
 13,332   Predictions locked in the latest weekly soul cohort (whole 4,444-soul family)
@@ -143,6 +177,8 @@ Building the world's only on-chain TCG price oracle — AI card grading, honest 
 4,444    NFTs generated (ERC-721)
 94       Solidity test cases passing
 ```
+<sub>auto-refreshed daily from the live oracle · last refresh 2026-08-29</sub>
+<!-- numbers:end -->
 
 ---
 
