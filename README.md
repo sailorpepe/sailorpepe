@@ -174,15 +174,15 @@ flowchart LR
 13,332   Predictions locked in the latest weekly soul cohort (whole 4,444-soul family)
 819      Calls graded per weekly cohort into write-once on-chain results roots
 273      Souls competing on the public leaderboard
-4,171    Sealed souls making the same calls, records hidden until mint
+4,170    Sealed souls making the same calls, records hidden until mint
 50       Blue-chip cards with hourly TWAP feeds
-51       API endpoints (34 free, 17 paid)
+56       API endpoints (37 free, 19 paid)
 35+      MCP local compute tools
 24       Live-data AI agent skills
 4,444    NFTs generated (ERC-721)
 94       Solidity test cases passing
 ```
-<sub>auto-refreshed daily from the live oracle · last refresh 2026-09-01</sub>
+<sub>auto-refreshed daily from the live oracle · last refresh 2026-09-02</sub>
 <!-- numbers:end -->
 
 ---
