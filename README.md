@@ -168,7 +168,7 @@ flowchart LR
 
 <!-- numbers:start -->
 ```
-455K+    Products indexed across 25+ TCG games
+456K+    Products indexed across 25+ TCG games
 30M+     Price history data points
 290K+    Products in the daily Merkle proof tree (roots on Base + LiteForge)
 13,332   Predictions locked in the latest weekly soul cohort (whole 4,444-soul family)
@@ -182,7 +182,7 @@ flowchart LR
 4,444    NFTs generated (ERC-721)
 94       Solidity test cases passing
 ```
-<sub>auto-refreshed daily from the live oracle · last refresh 2026-09-02</sub>
+<sub>auto-refreshed daily from the live oracle · last refresh 2026-09-03</sub>
 <!-- numbers:end -->
 
 ---
