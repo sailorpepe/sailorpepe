@@ -176,13 +176,13 @@ flowchart LR
 273      Souls competing on the public leaderboard
 4,170    Sealed souls making the same calls, records hidden until mint
 50       Blue-chip cards with hourly TWAP feeds
-56       API endpoints (37 free, 19 paid)
+57       API endpoints (38 free, 19 paid)
 35+      MCP local compute tools
 24       Live-data AI agent skills
 4,444    NFTs generated (ERC-721)
 94       Solidity test cases passing
 ```
-<sub>auto-refreshed daily from the live oracle · last refresh 2026-09-03</sub>
+<sub>auto-refreshed daily from the live oracle · last refresh 2026-09-04</sub>
 <!-- numbers:end -->
 
 ---
