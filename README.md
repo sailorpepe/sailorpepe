@@ -170,19 +170,19 @@ flowchart LR
 ```
 456K+    Products indexed across 25+ TCG games
 30M+     Price history data points
-290K+    Products in the daily Merkle proof tree (roots on Base + LiteForge)
+288K+    Products in the daily Merkle proof tree (roots on Base + LiteForge)
 13,332   Predictions locked in the latest weekly soul cohort (whole 4,444-soul family)
 819      Calls graded per weekly cohort into write-once on-chain results roots
 273      Souls competing on the public leaderboard
 4,170    Sealed souls making the same calls, records hidden until mint
 50       Blue-chip cards with hourly TWAP feeds
-57       API endpoints (38 free, 19 paid)
+56       API endpoints (38 free, 18 paid)
 35+      MCP local compute tools
 24       Live-data AI agent skills
 4,444    NFTs generated (ERC-721)
 94       Solidity test cases passing
 ```
-<sub>auto-refreshed daily from the live oracle · last refresh 2026-09-04</sub>
+<sub>auto-refreshed daily from the live oracle · last refresh 2026-09-05</sub>
 <!-- numbers:end -->
 
 ---
