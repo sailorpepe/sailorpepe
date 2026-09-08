@@ -56,7 +56,7 @@ def main():
 {sealed:,}    Sealed souls making the same calls, records hidden until mint
 50       Blue-chip cards with hourly TWAP feeds
 {endpoints}       API endpoints ({free} free, {paid} paid)
-35+      MCP local compute tools
+22       MCP oracle tools (hosted endpoint + stdio package)
 24       Live-data AI agent skills
 4,444    NFTs generated (ERC-721)
 94       Solidity test cases passing
