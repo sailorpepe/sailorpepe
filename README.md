@@ -182,7 +182,7 @@ flowchart LR
 4,444    NFTs generated (ERC-721)
 94       Solidity test cases passing
 ```
-<sub>auto-refreshed daily from the live oracle · last refresh 2026-09-09</sub>
+<sub>auto-refreshed daily from the live oracle · last refresh 2026-09-10</sub>
 <!-- numbers:end -->
 
 ---
