@@ -41,6 +41,20 @@ def main():
     rated = len(sr.get("rated") or [])
     lock_n = (sr.get("latest_lock") or {}).get("n_predictions")
     sealed = (sr.get("sealed_souls") or {}).get("count")
+    # Panel freshness comes from the oracle itself (root -> "panels"), never
+    # hard-coded here. The USD feed froze on 2026-09-07 while several surfaces
+    # went on advertising "daily", which is exactly what this avoids repeating.
+    panels = root.get("panels") or {}
+    usd = panels.get("usd") or {}
+    jp = panels.get("japanese") or {}
+    usd_state = "refreshing daily" if usd.get("refreshing") else \
+                f"USD frozen at {usd.get('as_of', 'its last good date')}"
+    jp_cards = jp.get("cards") or 0
+    jp_two = jp.get("two_sided") or 0
+    if not jp_cards:
+        print("japanese panel figures came back empty — leaving README untouched")
+        return
+
     if not all([catalog, endpoints, proof_n, rated, lock_n, sealed]):
         print("a live figure came back empty — leaving README untouched")
         return
@@ -49,12 +63,14 @@ def main():
 ```
 {catalog // 1000}K+    Products indexed across 25+ TCG games
 30M+     Price history data points
-{proof_n // 1000}K+    Products in the daily Merkle proof tree (roots on Base + LiteForge)
+{proof_n // 1000}K+    Products in the Merkle proof tree ({usd_state}, roots on Base + LiteForge)
+{jp_cards:,}  Japanese-print cards priced daily across 24 games
+{jp_two:,}  of those carrying BOTH an ask and a dealer buyback bid
 {lock_n:,}   Predictions locked in the latest weekly soul cohort (whole 4,444-soul family)
 {rated * 3:,}      Calls graded per weekly cohort into write-once on-chain results roots
 {rated}      Souls competing on the public leaderboard
 {sealed:,}    Sealed souls making the same calls, records hidden until mint
-50       Blue-chip cards with hourly TWAP feeds
+50       Blue-chip cards on the TWAP feed ({usd_state}; the updater skips rather than re-push stale prices)
 {endpoints}       API endpoints ({free} free, {paid} paid)
 22       MCP oracle tools (hosted endpoint + stdio package)
 24       Live-data AI agent skills

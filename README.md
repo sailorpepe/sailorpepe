@@ -170,12 +170,14 @@ flowchart LR
 ```
 456K+    Products indexed across 25+ TCG games
 30M+     Price history data points
-290K+    Products in the daily Merkle proof tree (roots on Base + LiteForge)
+290K+    Products in the Merkle proof tree (USD frozen at 2026-09-07, roots on Base + LiteForge)
+364,850  Japanese-print cards priced daily across 24 games
+167,176  of those carrying BOTH an ask and a dealer buyback bid
 13,332   Predictions locked in the latest weekly soul cohort (whole 4,444-soul family)
 819      Calls graded per weekly cohort into write-once on-chain results roots
 273      Souls competing on the public leaderboard
 4,170    Sealed souls making the same calls, records hidden until mint
-50       Blue-chip cards with hourly TWAP feeds
+50       Blue-chip cards on the TWAP feed (USD frozen at 2026-09-07; the updater skips rather than re-push stale prices)
 56       API endpoints (38 free, 18 paid)
 22       MCP oracle tools (hosted endpoint + stdio package)
 24       Live-data AI agent skills
