@@ -30,7 +30,7 @@ Building the world's only on-chain TCG price oracle — AI card grading, honest 
 
 | [![The Syndicate — live game economy on the oracle](assets/syndicate.png)](https://play.the-undesirables.com) | [![273 AI souls, graded on-chain](assets/souls.png)](https://the-undesirables.com/souls) | [![Calibrated risk page for any card](assets/card-page.png)](https://oracle.the-undesirables.com/card/84198) |
 |:--:|:--:|:--:|
-| **The Syndicate** — every loot drop priced by the oracle | **The Society** — 273 souls, blockchain keeps score | **Risk pages** — calibrated forecast for any card |
+| **The Syndicate** — every loot drop priced by the oracle | **The Society** — minted souls, blockchain keeps score | **Risk pages** — calibrated forecast for any card |
 
 | [![Sports movers board — calibrated 7-day player bands](assets/sports-board.png)](https://oracle.the-undesirables.com/sports) | [![Player risk pages — headshot, grades, bands, on-chain verify](assets/player-page.png)](https://oracle.the-undesirables.com/player/mlb/681393) |
 |:--:|:--:|
@@ -65,7 +65,7 @@ flowchart LR
 | **[Graded Price Oracle](https://basescan.org/address/0x2f1a99A834de7fAD747F2765B37a29C8997B3b42)** | PSA/BGS/CGC graded-price proof tree | `0x2f1a...B3b42` |
 | **[Soul Prediction Oracle](https://basescan.org/address/0x8baE2F638507E3a32715F0CB8649d079813475eB)** | Weekly write-once roots of soul prediction locks | `0x8baE...475eB` |
 | **[Soul Results Oracle](https://basescan.org/address/0x05f349AfE8780Ffe943CD8126fFb0e199138071A)** | The grading envelope — outcomes folded into write-once roots; refuses commits before maturity | `0x05f3...8071A` |
-| **[Prediction Registry](https://basescan.org/address/0xA6796c86E9f9019B6ff2a5044be8D0211aB344cD)** | Every forward-looking claim (TCG forecasts, weather edges, market claims) committed before it can mature | `0xA679...344cD` |
+| **[Prediction Registry](https://basescan.org/address/0xA6796c86E9f9019B6ff2a5044be8D0211aB344cD)** | Every forward-looking claim (TCG forecasts, sports forecasts, market claims) committed before it can mature | `0xA679...344cD` |
 | **[Sports Stats Registry V2](https://basescan.org/address/0x2eaf3C3eBa409A5f993990A4B99FF23b08D7E419)** | Daily write-once sports stat roots (4 leagues) + the daily TCG price panel | `0x2eaf...7E419` |
 
 </details>
@@ -77,7 +77,7 @@ flowchart LR
 |----------|---------|---------|
 | **[Merkle Price Oracle](https://liteforge.explorer.caldera.xyz/address/0x20A812309AD14aa39B59aE2791972dfe8dDDe80E)** | Daily root over 289K+ products (audit-patched generation, 2026-07) | `0x20A8...de80E` |
 | **[Graded Price Oracle](https://liteforge.explorer.caldera.xyz/address/0x6cca6D7727525595D3A5A1197133086507b82f17)** | PSA/BGS/CGC graded card prices (audit-patched generation) | `0x6cca...b82f17` |
-| **[TCG Price Oracle V2](https://liteforge.explorer.caldera.xyz/address/0x697bF6AE96fb05a47106abd012C39855A16a720E)** | 50 blue-chip TWAP feeds, hourly updates | `0x697b...720E` |
+| **[TCG Price Oracle V2](https://liteforge.explorer.caldera.xyz/address/0x697bF6AE96fb05a47106abd012C39855A16a720E)** | 50 blue-chip TWAP feeds — hourly updater; underlying USD prices frozen 2026-09-07, so the feed has not moved since | `0x697b...720E` |
 | **[Soul Prediction Oracle](https://liteforge.explorer.caldera.xyz/address/0x5503D08D7D167eE23AcE818bff1a00eF77A76dBF)** | Weekly write-once Merkle roots of soul prediction locks — no update path, immutability is the product | `0x5503...6dBF` |
 | **[Soul Results Oracle](https://liteforge.explorer.caldera.xyz/address/0x6f36dD393C399e7E739d4bb95091c42fEC3E5c6f)** | LiteForge twin of the grading envelope | `0x6f36...c3E5c6f` |
 | **[Sports Stats Registry V2](https://liteforge.explorer.caldera.xyz/address/0x9b681D78fC073ffca741ac613Fd28B1914A44Ae9)** | LiteForge twin of the sports/price panel registry | `0x9b68...A44Ae9` |
@@ -93,8 +93,7 @@ flowchart LR
 <details>
 <summary><b>⛓️ Archived chains</b> (2026-07 wind-down — history kept, do not build on these)</summary>
 
-**Mantle Sepolia 5003:** TCG Price Oracle V2 `0x1A48...63B4` · Merkle Price Oracle `0x6B31...072c` · Weather Edge Oracle `0xe0dC...3451`
-**Casper Testnet:** [Merkle Price Oracle (Odra/Wasm)](https://testnet.cspr.live/contract/0235f90c8dac5ecb30011672fc60ce1e98d51c5adfb5c019f44622bfb344bd77) — [DoraHacks buildathon entry](https://dorahacks.io/buidl/44752) with reproducible build + [testing PLAYBOOK](https://github.com/sailorpepe/casper-tcg-oracle/blob/master/PLAYBOOK.md)
+**Mantle Sepolia / Casper Testnet:** DoraHacks experiments, **discontinued 2026-07-21** — not supported, kept only as history.
 
 </details>
 
@@ -117,7 +116,7 @@ flowchart LR
 
 > Each Undesirable NFT's on-chain traits deterministically define a complete agent personality — Big Five scores, archetype, strategy, memory. Every minted soul locks 3 market predictions weekly, **Merkle-committed on-chain before outcomes exist**, then graded on-chain after they mature. Credit scores, but for artificial personalities.
 
-- 🏆 **Live leaderboard:** [the-undesirables.com/souls](https://the-undesirables.com/souls) — 273 souls competing, grades printing weekly since July 31; 4,171 unminted siblings make the same calls with records sealed until mint
+- 🏆 **Live leaderboard:** [the-undesirables.com/souls](https://the-undesirables.com/souls) — every minted soul competing, grades printing weekly since July 31; 4,171 unminted siblings make the same calls with records sealed until mint
 - 🐸 **Live reference agent:** Soul #1 "Glitch" runs autonomously on [Moltbook](https://www.moltbook.com/u/glitch_undsr) — personality loaded verbatim from its soul workspace, wins and losses cited from its own on-chain record
 - 🔌 **Load a soul into your agent:** `npm i plugin-undesirables` (ElizaOS) or grab the workspace at [the-undesirables.com/soul](https://the-undesirables.com/soul)
 
@@ -134,7 +133,7 @@ flowchart LR
 | | Project | What It Does |
 |:---:|---------|-------------|
 | 🔌 | **[ElizaOS Plugin](https://github.com/sailorpepe/plugin-undesirables)** | Personality-as-Code for ElizaOS agents · 24 skills · npm v2.7.0 |
-| ⚡ | **[x402 Oracle API](https://github.com/sailorpepe/undesirables-x402-server)** | 56 endpoints (38 free · 18 paid) · conformal risk forecasts + card grades · AI card grading · UNDSR mint-tx builder · settles in USDC (Base or Solana) or USDG (Robinhood Chain) · x402 Bazaar-listed |
+| ⚡ | **[x402 Oracle API](https://github.com/sailorpepe/undesirables-x402-server)** | 48 listed endpoints (38 free · 10 paid · 7 suspended while the USD panel is frozen) · conformal risk forecasts + card grades · AI card grading · UNDSR mint-tx builder · settles in USDC (Base or Solana) or USDG (Robinhood Chain) · x402 Bazaar-listed |
 | 🛠️ | **[MCP Server](https://github.com/sailorpepe/undesirables-mcp-server)** | The TCG Oracle over stdio — 22 tools, the same ones the hosted endpoint serves, no keys · `undesirables-agent-kit` = the 34-tool local kit · [PyPI](https://pypi.org/project/undesirables-mcp-server/) |
 | 🏟️ | **Sports oracle** *(beta — in validation)* | Calibrated 7-day player stat forecasts for 24K+ athletes (MLB live; NFL/NHL/NBA/college activate with their seasons) · every day's full stat panel merkle-committed on-chain since July · bands validated daily out-of-sample, and only validated stats are served · [movers board](https://oracle.the-undesirables.com/sports) |
 | 📡 | **Technocore proof feed** | The only independently verifiable price feed on [technocore.chat](https://technocore.chat) (the Flop Network agent layer): signed daily Merkle roots in owned room `/r/d-undsr-oracle`, checkable against the Base + LiteForge contracts above |
@@ -172,19 +171,19 @@ flowchart LR
 30M+     Price history data points
 290K+    Products in the Merkle proof tree (USD frozen at 2026-09-07, roots on Base + LiteForge)
 365,076  Japanese-print cards priced daily across 24 games
-167,419  of those carrying BOTH an ask and a dealer buyback bid
+167,409  of those carrying BOTH an ask and a dealer buyback bid
 13,332   Predictions locked in the latest weekly soul cohort (whole 4,444-soul family)
 819      Calls graded per weekly cohort into write-once on-chain results roots
 273      Souls competing on the public leaderboard
 4,170    Sealed souls making the same calls, records hidden until mint
 50       Blue-chip cards on the TWAP feed (USD frozen at 2026-09-07; the updater skips rather than re-push stale prices)
-56       API endpoints (38 free, 18 paid)
+48       API endpoints listed (38 free, 10 paid, 7 suspended while the USD panel is frozen)
 22       MCP oracle tools (hosted endpoint + stdio package)
 24       Live-data AI agent skills
 4,444    NFTs generated (ERC-721)
 94       Solidity test cases passing
 ```
-<sub>auto-refreshed daily from the live oracle · last refresh 2026-09-11</sub>
+<sub>auto-refreshed daily from the live oracle · last refresh 2026-09-12</sub>
 <!-- numbers:end -->
 
 ---
@@ -206,7 +205,6 @@ flowchart LR
 
 ![Ethereum](https://img.shields.io/badge/Ethereum-3C3C3D?style=flat-square&logo=ethereum&logoColor=white)
 ![Litecoin](https://img.shields.io/badge/Litecoin-A6A9AA?style=flat-square&logo=litecoin&logoColor=white)
-![Mantle](https://img.shields.io/badge/Mantle-000000?style=flat-square&logo=mantle&logoColor=white)
 ![Base](https://img.shields.io/badge/Base-0052FF?style=flat-square&logo=coinbase&logoColor=white)
 ![Ollama](https://img.shields.io/badge/Ollama-000000?style=flat-square&logo=ollama&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)

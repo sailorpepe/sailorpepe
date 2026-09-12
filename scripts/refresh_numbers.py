@@ -37,6 +37,8 @@ def main():
     catalog = root["total_products"]
     endpoints = root["total_endpoints"]
     free, paid = root["free_endpoints"], root["paid_endpoints"]
+    susp = root.get("suspended_endpoints") or 0
+    susp_txt = f", {susp} suspended while the USD panel is frozen" if susp else ""
     proof_n = int(eth_call("0x9b9d326d", "0xE49104b3d540CBA4BFFe3B73bc06e910A3A7da4e"), 16)
     rated = len(sr.get("rated") or [])
     lock_n = (sr.get("latest_lock") or {}).get("n_predictions")
@@ -71,7 +73,7 @@ def main():
 {rated}      Souls competing on the public leaderboard
 {sealed:,}    Sealed souls making the same calls, records hidden until mint
 50       Blue-chip cards on the TWAP feed ({usd_state}; the updater skips rather than re-push stale prices)
-{endpoints}       API endpoints ({free} free, {paid} paid)
+{endpoints}       API endpoints listed ({free} free, {paid} paid{susp_txt})
 22       MCP oracle tools (hosted endpoint + stdio package)
 24       Live-data AI agent skills
 4,444    NFTs generated (ERC-721)
