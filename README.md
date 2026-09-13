@@ -171,7 +171,7 @@ flowchart LR
 30M+     Price history data points
 290K+    Products in the Merkle proof tree (USD frozen at 2026-09-07, roots on Base + LiteForge)
 365,076  Japanese-print cards priced daily across 24 games
-167,409  of those carrying BOTH an ask and a dealer buyback bid
+167,159  of those carrying BOTH an ask and a dealer buyback bid
 13,332   Predictions locked in the latest weekly soul cohort (whole 4,444-soul family)
 819      Calls graded per weekly cohort into write-once on-chain results roots
 273      Souls competing on the public leaderboard
@@ -183,7 +183,7 @@ flowchart LR
 4,444    NFTs generated (ERC-721)
 94       Solidity test cases passing
 ```
-<sub>auto-refreshed daily from the live oracle · last refresh 2026-09-12</sub>
+<sub>auto-refreshed daily from the live oracle · last refresh 2026-09-13</sub>
 <!-- numbers:end -->
 
 ---
