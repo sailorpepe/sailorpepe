@@ -134,10 +134,10 @@ flowchart LR
 |:---:|---------|-------------|
 | 🔌 | **[ElizaOS Plugin](https://github.com/sailorpepe/plugin-undesirables)** | Personality-as-Code for ElizaOS agents · 24 skills · npm v2.7.0 |
 | ⚡ | **[x402 Oracle API](https://github.com/sailorpepe/undesirables-x402-server)** | 48 listed endpoints (38 free · 10 paid · 7 suspended while the USD panel is frozen) · conformal risk forecasts + card grades · AI card grading · UNDSR mint-tx builder · settles in USDC (Base or Solana) or USDG (Robinhood Chain) · x402 Bazaar-listed |
-| 🛠️ | **[MCP Server](https://github.com/sailorpepe/undesirables-mcp-server)** | The TCG Oracle over stdio — 23 tools, the same ones the hosted endpoint serves, no keys · `undesirables-agent-kit` = the 34-tool local kit · [PyPI](https://pypi.org/project/undesirables-mcp-server/) |
+| 🛠️ | **[MCP Server](https://github.com/sailorpepe/undesirables-mcp-server)** | The TCG Oracle over stdio — 27 tools, the same ones the hosted endpoint serves, no keys · `undesirables-agent-kit` = the 34-tool local kit · [PyPI](https://pypi.org/project/undesirables-mcp-server/) |
 | 🏟️ | **Sports oracle** *(beta — in validation)* | Calibrated 7-day player stat forecasts for 24K+ athletes (MLB live; NFL/NHL/NBA/college activate with their seasons) · every day's full stat panel merkle-committed on-chain since July · bands validated daily out-of-sample, and only validated stats are served · [movers board](https://oracle.the-undesirables.com/sports) |
 | 📡 | **Technocore proof feed** | The only independently verifiable price feed on [technocore.chat](https://technocore.chat) (the Flop Network agent layer): signed daily Merkle roots in owned room `/r/d-undsr-oracle`, checkable against the Base + LiteForge contracts above |
-| 🔗 | **[LitVM MCP](https://github.com/sailorpepe/litvm-tcg-oracle-mcp)** | 14-tool MCP for on-chain prices · Merkle-verified · hosted at litvm.the-undesirables.com/mcp · PyPI |
+| 🔗 | **[LitVM MCP](https://github.com/sailorpepe/litvm-tcg-oracle-mcp)** | 16-tool MCP for on-chain prices · Merkle-verified · hosted at litvm.the-undesirables.com/mcp · PyPI |
 | 🔮 | **[WebMCP](https://github.com/sailorpepe/tcg-oracle-webmcp)** | Browser-native AI agent tools · 9 tools via navigator.modelContext · zero API keys |
 | 📊 | **[Widget](https://github.com/sailorpepe/tcg-oracle-widget)** | Embeddable price cards · 4 skins · sparklines · graded premiums · one `<script>` tag |
 | 🎴 | **[TCG Plugin](https://github.com/sailorpepe/elizaos-tcg-oracle-plugin)** | Standalone ElizaOS plugin for TCG market intelligence |
@@ -178,7 +178,7 @@ flowchart LR
 4,170    Sealed souls making the same calls, records hidden until mint
 50       Blue-chip cards on the TWAP feed (USD frozen at 2026-09-07; the updater skips rather than re-push stale prices)
 49       API endpoints listed (39 free, 10 paid, 7 suspended while the USD panel is frozen)
-23       MCP oracle tools (hosted endpoint + stdio package)
+27       MCP oracle tools (hosted endpoint + stdio package)
 24       Live-data AI agent skills
 4,444    NFTs generated (ERC-721)
 94       Solidity test cases passing
