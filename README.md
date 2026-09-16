@@ -171,20 +171,20 @@ flowchart LR
 456K+    Products indexed across 25+ TCG games
 30M+     Price history data points
 290K+    Products in the Merkle proof tree (USD frozen at 2026-09-07, roots on Base + LiteForge)
-365,047  Japanese-print cards priced daily across 24 games
-167,175  of those carrying BOTH an ask and a dealer buyback bid
+365,276  Japanese-print cards priced daily across 24 games
+167,394  of those carrying BOTH an ask and a dealer buyback bid
 13,332   Predictions locked in the latest weekly soul cohort (whole 4,444-soul family)
 819      Calls graded per weekly cohort into write-once on-chain results roots
 273      Souls competing on the public leaderboard
 4,170    Sealed souls making the same calls, records hidden until mint
 50       Blue-chip cards on the TWAP feed (USD frozen at 2026-09-07; the updater skips rather than re-push stale prices)
-49       API endpoints listed (39 free, 10 paid, 7 suspended while the USD panel is frozen)
+51       API endpoints listed (41 free, 10 paid, 7 suspended while the USD panel is frozen)
 27       MCP oracle tools (hosted endpoint + stdio package)
 24       Live-data AI agent skills
 4,444    NFTs generated (ERC-721)
 94       Solidity test cases passing
 ```
-<sub>auto-refreshed daily from the live oracle · last refresh 2026-09-15</sub>
+<sub>auto-refreshed daily from the live oracle · last refresh 2026-09-16</sub>
 <!-- numbers:end -->
 
 ---
