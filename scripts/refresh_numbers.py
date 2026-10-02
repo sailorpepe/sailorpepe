@@ -30,6 +30,37 @@ def eth_call(sel, to):
     return json.load(urllib.request.urlopen(req, timeout=30))["result"]
 
 
+def mcp_tool_count(url="https://mcp.the-undesirables.com"):
+    """Live hosted tool count via the MCP initialize -> tools/list handshake.
+
+    This was a static literal and rotted twice (23 -> 27 -> 25 as tools were
+    added and the retired grading tools were pulled). It needs a session id,
+    which is the only reason it was ever hand-typed. Returns None on any
+    failure so the caller can leave the old line alone.
+    """
+    try:
+        body = json.dumps({"jsonrpc": "2.0", "id": 1, "method": "initialize",
+                           "params": {"protocolVersion": "2025-06-18", "capabilities": {},
+                                      "clientInfo": {"name": "sailorpepe-profile-refresh", "version": "1.0"}}}).encode()
+        req = urllib.request.Request(url, data=body, headers={
+            **UA, "Content-Type": "application/json",
+            "Accept": "application/json, text/event-stream"})
+        with urllib.request.urlopen(req, timeout=30) as r:
+            sid = r.headers.get("mcp-session-id")
+        if not sid:
+            return None
+        body = json.dumps({"jsonrpc": "2.0", "id": 2, "method": "tools/list", "params": {}}).encode()
+        req = urllib.request.Request(url, data=body, headers={
+            **UA, "Content-Type": "application/json",
+            "Accept": "application/json, text/event-stream", "mcp-session-id": sid})
+        with urllib.request.urlopen(req, timeout=30) as r:
+            raw = r.read().decode()
+        m = re.search(r"\{.*\}", raw, re.S)
+        return len(json.loads(m.group(0))["result"]["tools"])
+    except Exception:
+        return None
+
+
 def main():
     root = get_json("https://oracle.the-undesirables.com/")
     sr = get_json("https://oracle.the-undesirables.com/api/v1/soul-rating")
@@ -39,6 +70,14 @@ def main():
     free, paid = root["free_endpoints"], root["paid_endpoints"]
     susp = root.get("suspended_endpoints") or 0
     susp_txt = f", {susp} suspended while the USD panel is frozen" if susp else ""
+    # "0 paid" is true but reads like an omission. The oracle says WHY.
+    ppc = root.get("pay_per_call") or {}
+    if ppc.get("status") == "paused":
+        since = f" since {ppc['since']}" if ppc.get("since") else ""
+        mix_txt = f"all {free} free — pay-per-call paused{since}{susp_txt}"
+    else:
+        mix_txt = f"{free} free, {paid} paid{susp_txt}"
+    tools = mcp_tool_count()
     proof_n = int(eth_call("0x9b9d326d", "0xE49104b3d540CBA4BFFe3B73bc06e910A3A7da4e"), 16)
     rated = len(sr.get("rated") or [])
     lock_n = (sr.get("latest_lock") or {}).get("n_predictions")
@@ -46,6 +85,9 @@ def main():
     # Panel freshness comes from the oracle itself (root -> "panels"), never
     # hard-coded here. The USD feed froze on 2026-09-07 while several surfaces
     # went on advertising "daily", which is exactly what this avoids repeating.
+    # width matches the other rows in the block; if the handshake fails we keep
+    # the previous number rather than publish a guess
+    tools_txt = f"{tools:<9}" if tools else "27       "
     panels = root.get("panels") or {}
     usd = panels.get("usd") or {}
     jp = panels.get("japanese") or {}
@@ -73,8 +115,8 @@ def main():
 {rated}      Souls competing on the public leaderboard
 {sealed:,}    Sealed souls making the same calls, records hidden until mint
 50       Blue-chip cards on the TWAP feed ({usd_state}; the updater skips rather than re-push stale prices)
-{endpoints}       API endpoints listed ({free} free, {paid} paid{susp_txt})
-27       MCP oracle tools (hosted endpoint + stdio package)
+{endpoints}       API endpoints listed ({mix_txt})
+{tools_txt}MCP oracle tools (hosted endpoint + stdio package)
 24       Live-data AI agent skills
 4,444    NFTs generated (ERC-721)
 94       Solidity test cases passing

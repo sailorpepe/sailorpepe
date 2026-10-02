@@ -6,7 +6,7 @@
 
 **Founder @ THE UNDESIRABLES LLC**
 
-Building the world's only on-chain TCG price oracle — a Japanese two-sided dealer board (bid **and** ask, 365K cards, daily, Merkle-rooted), graded-slab lending terms on a live value basis, calibrated sports movers, AI card grading, and 456K+ products anchored on Base mainnet + LitVM LiteForge — plus 4,444 on-chain AI souls with Merkle-locked, on-chain-graded prediction track records. *The USD price panel froze 2026-09-07 when its upstream went away; everything USD is served as last-published and labelled, never as current.*
+Building the world's only on-chain TCG price oracle — a Japanese two-sided dealer board (bid **and** ask, 365K cards, daily, Merkle-rooted), graded-slab lending terms on a live value basis, calibrated sports movers, and 456K+ products anchored on Base mainnet + LitVM LiteForge — plus 4,444 on-chain AI souls with Merkle-locked, on-chain-graded prediction track records. *The USD price panel froze 2026-09-07 when its upstream went away; everything USD is served as last-published and labelled, never as current.*
 
 [![Live Dashboard](https://img.shields.io/badge/Live_Dashboard-the--undesirables.com-00dcff?style=for-the-badge&logo=vercel&logoColor=white)](https://the-undesirables.com)
 [![X](https://img.shields.io/badge/X-@undesirables__ai-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/undesirables_ai)
@@ -23,7 +23,7 @@ Building the world's only on-chain TCG price oracle — a Japanese two-sided dea
 | You are… | Your door | One step |
 |---|---|---|
 | 🧑 **A human** — collector, trader, curious | **[the-undesirables.com](https://the-undesirables.com)** | Browse the Japanese board, graded-slab loan terms, sports movers & the soul leaderboard |
-| 🤖 **An AI agent / builder** | **`https://mcp.the-undesirables.com`** | Paste the URL into any MCP client — 27 tools, free Japanese board summary / graded asks / loan universe / sports, paid quotes via x402 |
+| 🤖 **An AI agent / builder** | **`https://mcp.the-undesirables.com`** | Paste the URL into any MCP client — call `tools/list` for the live set; Japanese board summary, graded asks, loan universe and sports, all free |
 | 🍄 **An Undesirables holder** | **Soul Runner** *(private beta)* | Your NFT is a live AI agent you can run yourself — coming soon |
 
 ### 🟢 Live right now
@@ -40,11 +40,11 @@ Building the world's only on-chain TCG price oracle — a Japanese two-sided dea
 
 ```mermaid
 flowchart LR
-    D[("Japanese dealer board · graded-slab census<br/>sports panels · 456K+ products")] --> O["Oracle<br/>loan terms (empirical VaR) · JP souls board<br/>sports bands · AI grading"]
+    D[("Japanese dealer board · graded-slab census<br/>sports panels · 456K+ products")] --> O["Oracle<br/>loan terms (empirical VaR) · JP souls board<br/>sports bands · graded asks"]
     O --> R["Daily Merkle roots"]
     R --> B["Base mainnet<br/>durability layer"]
     R --> L["LitVM LiteForge<br/>testnet narrative"]
-    O --> API["x402 API<br/>pay-per-call · USDC/USDG"]
+    O --> API["Oracle API<br/>free · x402 rail paused"]
     O --> MCP["MCP server<br/>agents plug in directly"]
     R --> TC["Technocore proof feed<br/>signed · agent-verifiable"]
     API --> GAME["The Syndicate<br/>living game economy"]
@@ -108,7 +108,6 @@ flowchart LR
 | **Japanese two-sided board** | 365K Japanese-print cards across 24 games, priced daily with a dealer **bid and ask** — 167K carry both sides. Published as aggregates (`/api/v1/jp/summary`), every day's board Merkle-rooted on-chain. The Card Souls call this board since 2026-09-14 |
 | **Graded-slab loan terms v2** | Max LTV, liquidation price, liquidity tier and APR premium for PSA/BGS/CGC slabs — value basis is **live** (realized sales › delisting-inferred sales › ask haircut), tail risk is an empirical VaR from 14 months of history, labelled as such. Free worked derivation for the daily free board |
 | **Sports movers** *(in validation)* | Calibrated 7-day player stat bands, validated out-of-sample daily; only validated stats are served; dormant / warming leagues say so instead of serving frozen numbers |
-| **AI card grading** | PSA/Beckett grade prediction from a photo, plus a grade-or-not ROI verdict |
 | **Forward-only track record** | Calls locked before outcomes, outcomes graded into write-once on-chain results roots — the USD-era cohorts void on schedule rather than being scored against a frozen price |
 
 ---
@@ -134,14 +133,14 @@ flowchart LR
 | | Project | What It Does |
 |:---:|---------|-------------|
 | 🔌 | **[ElizaOS Plugin](https://github.com/sailorpepe/plugin-undesirables)** | Personality-as-Code for ElizaOS agents · 26 skills · live Japanese board + sports context · npm v2.7.2 |
-| ⚡ | **[x402 Oracle API](https://github.com/sailorpepe/undesirables-x402-server)** | 51 listed endpoints (41 free · 10 paid · 7 suspended while the USD panel is frozen) · graded-slab loan terms · Japanese board summary · sports movers · AI card grading · UNDSR mint-tx builder · settles in USDC (Base or Solana) or USDG (Robinhood Chain) · x402 Bazaar-listed |
-| 🛠️ | **[MCP Server](https://github.com/sailorpepe/undesirables-mcp-server)** | The TCG Oracle over stdio — 27 tools, the same ones the hosted endpoint serves, no keys · `undesirables-agent-kit` = the 34-tool local kit · [PyPI](https://pypi.org/project/undesirables-mcp-server/) |
+| ⚡ | **[x402 Oracle API](https://github.com/sailorpepe/undesirables-x402-server)** | Every endpoint free — pay-per-call paused 2026-10-02 (GET / is authoritative for the live count) · graded-slab loan terms · Japanese board summary · sports movers · UNDSR mint-tx builder · x402 rail installed, settles in USDC (Base or Solana) or USDG when re-enabled (Robinhood Chain) · x402 Bazaar-listed |
+| 🛠️ | **[MCP Server](https://github.com/sailorpepe/undesirables-mcp-server)** | The TCG Oracle over stdio — the same tools the hosted endpoint serves (`tools/list` is authoritative), no keys · `undesirables-agent-kit` = the 34-tool local kit · [PyPI](https://pypi.org/project/undesirables-mcp-server/) |
 | 🏟️ | **Sports oracle** *(beta — in validation)* | Calibrated 7-day player stat forecasts for 24K+ athletes (MLB live; NFL/NHL/NBA/college activate with their seasons) · every day's full stat panel merkle-committed on-chain since July · bands validated daily out-of-sample, and only validated stats are served · [movers board](https://oracle.the-undesirables.com/sports) |
 | 📡 | **Technocore proof feed** | The only independently verifiable price feed on [technocore.chat](https://technocore.chat) (the Flop Network agent layer): signed daily Merkle roots in owned room `/r/d-undsr-oracle`, checkable against the Base + LiteForge contracts above |
-| 🔗 | **[LitVM MCP](https://github.com/sailorpepe/litvm-tcg-oracle-mcp)** | 16-tool MCP for on-chain prices · Merkle-verified · hosted at litvm.the-undesirables.com/mcp · PyPI |
+| 🔗 | **[LitVM MCP](https://github.com/sailorpepe/litvm-tcg-oracle-mcp)** | MCP for on-chain prices · Merkle-verified · hosted at litvm.the-undesirables.com/mcp · PyPI |
 | 🔮 | **[WebMCP](https://github.com/sailorpepe/tcg-oracle-webmcp)** | Browser-native AI agent tools · 9 tools via navigator.modelContext · zero API keys |
 | 📊 | **[Widget](https://github.com/sailorpepe/tcg-oracle-widget)** | Embeddable price cards · 4 skins · sparklines · graded premiums · one `<script>` tag |
-| 🎴 | **[TCG Plugin](https://github.com/sailorpepe/elizaos-tcg-oracle-plugin)** | Standalone ElizaOS plugin — search, grading, Japanese board, sports board, graded loan preview · npm v2.0.2 |
+| 🎴 | **[TCG Plugin](https://github.com/sailorpepe/elizaos-tcg-oracle-plugin)** | Standalone ElizaOS plugin — search, Japanese board, sports board, graded loan preview · npm v2.0.2 |
 
 ---
 
@@ -149,8 +148,8 @@ flowchart LR
 
 | App | Description | Stack |
 |-----|-------------|-------|
-| **[Undesirables Desktop](https://github.com/sailorpepe/undesirables-desktop)** | Full desktop app — TCG analytics, NFT generation, AI card grading, UNDSR slab renderer | Tauri v2, Rust, React |
-| **[TCG Oracle App](https://github.com/sailorpepe/tcg-oracle-app)** | Cross-platform TCG market intelligence — price analytics, AI grading, Vault portfolio tracking | React Native, Expo |
+| **[Undesirables Desktop](https://github.com/sailorpepe/undesirables-desktop)** | Full desktop app — TCG analytics, NFT generation, UNDSR slab renderer | Tauri v2, Rust, React |
+| **[TCG Oracle App](https://github.com/sailorpepe/tcg-oracle-app)** | Cross-platform TCG market intelligence — price analytics, graded asks, Vault portfolio tracking | React Native, Expo |
 
 ---
 
@@ -178,8 +177,8 @@ flowchart LR
 273      Souls competing on the public leaderboard
 4,170    Sealed souls making the same calls, records hidden until mint
 50       Blue-chip cards on the TWAP feed (USD frozen at 2026-09-07; the updater skips rather than re-push stale prices)
-51       API endpoints listed (41 free, 10 paid, 7 suspended while the USD panel is frozen)
-27       MCP oracle tools (hosted endpoint + stdio package)
+46       API endpoints listed (all 46 free — pay-per-call paused since 2026-10-02, 7 suspended while the USD panel is frozen)
+25       MCP oracle tools (hosted endpoint + stdio package)
 24       Live-data AI agent skills
 4,444    NFTs generated (ERC-721)
 94       Solidity test cases passing
