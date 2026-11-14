@@ -75,14 +75,14 @@ flowchart LR
 
 | Contract | Purpose | Address |
 |----------|---------|---------|
-| **[Merkle Price Oracle](https://liteforge.explorer.caldera.xyz/address/0x20A812309AD14aa39B59aE2791972dfe8dDDe80E)** | Daily root over 289K+ products (audit-patched generation, 2026-07) | `0x20A8...de80E` |
-| **[Graded Price Oracle](https://liteforge.explorer.caldera.xyz/address/0x6cca6D7727525595D3A5A1197133086507b82f17)** | PSA/BGS/CGC graded card prices (audit-patched generation) | `0x6cca...b82f17` |
-| **[TCG Price Oracle V2](https://liteforge.explorer.caldera.xyz/address/0x697bF6AE96fb05a47106abd012C39855A16a720E)** | 50 blue-chip TWAP feeds — hourly updater; underlying USD prices frozen 2026-09-07, so the feed has not moved since | `0x697b...720E` |
-| **[Soul Prediction Oracle](https://liteforge.explorer.caldera.xyz/address/0x5503D08D7D167eE23AcE818bff1a00eF77A76dBF)** | Weekly write-once Merkle roots of soul prediction locks — no update path, immutability is the product | `0x5503...6dBF` |
-| **[Soul Results Oracle](https://liteforge.explorer.caldera.xyz/address/0x6f36dD393C399e7E739d4bb95091c42fEC3E5c6f)** | LiteForge twin of the grading envelope | `0x6f36...c3E5c6f` |
-| **[Sports Stats Registry V2](https://liteforge.explorer.caldera.xyz/address/0x9b681D78fC073ffca741ac613Fd28B1914A44Ae9)** | LiteForge twin of the sports/price panel registry | `0x9b68...A44Ae9` |
-| **[Grading Escrow](https://liteforge.explorer.caldera.xyz/address/0xe784d2AE4171De8f909eb638a60BE03B2341bB82)** | Pay-to-grade, AI card analysis | `0xe784...bB82` |
-| **[Weather Edge Oracle](https://liteforge.explorer.caldera.xyz/address/0x9955afC8AE25405ed9FcE66c23fa8E02eB3b6696)** | Merkle roots of 10-city NWS **observations** every 15 min — the weather truth layer stays live; the trading edge that sat on top of it is retired (closed at settlement) | `0x9955...6696` |
+| **[Merkle Price Oracle](https://explorer.testnet.liteforge.zeeve.net/address/0x20A812309AD14aa39B59aE2791972dfe8dDDe80E)** | Daily root over 289K+ products (audit-patched generation, 2026-07) | `0x20A8...de80E` |
+| **[Graded Price Oracle](https://explorer.testnet.liteforge.zeeve.net/address/0x6cca6D7727525595D3A5A1197133086507b82f17)** | PSA/BGS/CGC graded card prices (audit-patched generation) | `0x6cca...b82f17` |
+| **[TCG Price Oracle V2](https://explorer.testnet.liteforge.zeeve.net/address/0x697bF6AE96fb05a47106abd012C39855A16a720E)** | 50 blue-chip TWAP feeds — hourly updater; underlying USD prices frozen 2026-09-07, so the feed has not moved since | `0x697b...720E` |
+| **[Soul Prediction Oracle](https://explorer.testnet.liteforge.zeeve.net/address/0x5503D08D7D167eE23AcE818bff1a00eF77A76dBF)** | Weekly write-once Merkle roots of soul prediction locks — no update path, immutability is the product | `0x5503...6dBF` |
+| **[Soul Results Oracle](https://explorer.testnet.liteforge.zeeve.net/address/0x6f36dD393C399e7E739d4bb95091c42fEC3E5c6f)** | LiteForge twin of the grading envelope | `0x6f36...c3E5c6f` |
+| **[Sports Stats Registry V2](https://explorer.testnet.liteforge.zeeve.net/address/0x9b681D78fC073ffca741ac613Fd28B1914A44Ae9)** | LiteForge twin of the sports/price panel registry | `0x9b68...A44Ae9` |
+| **[Grading Escrow](https://explorer.testnet.liteforge.zeeve.net/address/0xe784d2AE4171De8f909eb638a60BE03B2341bB82)** | Pay-to-grade, AI card analysis | `0xe784...bB82` |
+| **[Weather Edge Oracle](https://explorer.testnet.liteforge.zeeve.net/address/0x9955afC8AE25405ed9FcE66c23fa8E02eB3b6696)** | Merkle roots of 10-city NWS **observations** every 15 min — the weather truth layer stays live; the trading edge that sat on top of it is retired (closed at settlement) | `0x9955...6696` |
 
 > Earlier contract generations (pre-audit 2026-07) keep their on-chain history and are documented in the repo — current addresses above are what `/api/v1/merkle/proof` and `/api/v1/graded/proof` verify against.
 
